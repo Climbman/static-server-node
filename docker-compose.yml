@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  node:
+    image: node:lts-bullseye
+    volumes:
+      - './:/home/node'
+    working_dir: '/home/node'
+    user: node
+    command: 'node ./app.js'
+    restart: always
+    init: true
+    ports:
+      - ${APP_PORT-=80}:${APP_PORT-=80}
+    networks:
+      - 'app'
+
+networks:
+  app:

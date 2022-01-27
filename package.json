@@ -1,0 +1,24 @@
+{
+  "name": "static-server-node",
+  "version": "1.0.0",
+  "description": "Serve static files with node (simple express.js script)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Climbman/static-serve-node.git"
+  },
+  "author": "Climbman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Climbman/static-serve-node/issues"
+  },
+  "homepage": "https://github.com/Climbman/static-serve-node#readme",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2"
+  }
+}
